@@ -1,0 +1,26 @@
+#include<iostream>
+using namespace std;
+
+//cylinder volume
+int volume(int r, int h)
+{
+    return (3.14*r*r*h);
+}
+//cube volume
+int volume(int r)
+{
+    return(r*r*r);
+}
+//reactangular box
+int volume(int l,int b,int h)
+{
+    return( l*b*h);
+}
+int main()
+{
+    cout<<"The volume of cylinder with raduis 4 and height 5 is "<<volume(4,5)<<endl;
+    cout<<"The volume of cube with side 3 is "<<volume(3)<<endl;
+    cout<<"The volume of rectanle with lenth 2 and breadth 5  and height 1 is "<< volume(2,5,1)<<endl;
+    return 0;
+
+}
